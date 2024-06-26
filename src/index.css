@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bgHeader{
+    /* background-position: top; */
+    background: 
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0.65) 0%, 
+      rgba(0, 0, 0, 0) 35%, 
+      rgba(0, 0, 0, 0) 65%, 
+      rgba(0, 0, 0, 0.65) 100%
+    ), 
+    url(https://s3-alpha-sig.figma.com/img/81d3/ead4/9b612aa8b7332ca9c95ca99ab5be5795?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcE-BfoweJUnO2dJi2-uuFvLuGFXjmbxu-bE9mfMFy7Z-LUi-heXoJQcv6e6zFX2pRZX7zXl8kjx4nUNVU2xr7J4j3lwPF6jN-wKcul4pFTqWEtyefjKP53-WGwu1kNNc3oGR7kB7gL7bWUAXQqTqddMb~nOVDYw~~9C3rKzl~uXic3cnRx7z4pMrMO0h0GdB1QoZl835AVQEOKmlFMAPDzN8YS9DqIKlnVI8gUHCSw6F-N-WtWYDCj~Uo18mrWFMDGtTcABlvbYST42beNslkmDAdaPzQRIL79Sronm~ywOeOYd6NyZd0x3p0VDMoIBPy6zd7L2ALjqDi57IgoBmw__);
+ /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 65%); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
