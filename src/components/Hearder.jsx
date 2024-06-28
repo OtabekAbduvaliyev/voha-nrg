@@ -3,6 +3,12 @@ import Navbar from './Navbar'
 import { BsArrowDown } from "react-icons/bs";
 import { RiLiveLine } from "react-icons/ri";
 const Hearder = () => {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth'  // Optional: smooth scrolling behavior
+    });
+  };
   return (
 <div className='bgHeader bg-cover bg-center h-screen flex flex-col justify-end'>
   <Navbar />
@@ -17,7 +23,7 @@ const Hearder = () => {
     </div>
     <div className="hidden lg:flex buttons flex items-center gap-[50px] lg:gap-[80px] px-[20px] lg:px-[0px] lg:mb-[-50px]">
       <div className="">
-        <button className='todown w-[104px] h-[104px] border rounded-full inline-block border-[#EDC893]'>
+        <button className='todown w-[104px] h-[104px] border rounded-full inline-block border-[#EDC893]' onClick={scrollToBottom}>
           <BsArrowDown className='text-white text-[20px] m-auto' />
         </button>
       </div>

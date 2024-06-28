@@ -21,7 +21,7 @@ const VideoModal = () => {
 
                 {/* Play Button */}
                 <button
-                    className="m-auto  font-bold py-4 px-4 rounded rounded-[50%] absolute top-1/2 left-[25%] transform -translate-x-1/2 -translate-y-1/2"
+                    className="m-auto  font-bold py-4 px-4 rounded rounded-[50%] absolute top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2"
                     onClick={openModal}
                 >
                     <FaPlayCircle className='text-[64px] text-custom-gold' />
