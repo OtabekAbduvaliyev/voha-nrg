@@ -10,7 +10,8 @@ export default {
         montserrat:['Montserrat','sans-serif'],
         DancingScript:["Dancing Script",'sans-serif'],
         lora:['Lora'],
-        ptSans:['PT Sans']
+        ptSans:['PT Sans'],
+        Inter:['Inter']
       },
       colors: {
         'custom-gold': '#DFC59A',

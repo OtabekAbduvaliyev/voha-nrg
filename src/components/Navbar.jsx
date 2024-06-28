@@ -28,8 +28,8 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <div className={`fixed top-0 left-0 z-[999] w-[100%] bg-custom-dark-blue py-[20px] transition-colors duration-300 ${!scroll ? 'lg:bg-transparent' : 'lg:bg-[#164147] '} ${!open ? 'bg-none' : 'bg-custom-dark-blue'}`}>
-            <nav className={`max-w-[1200px] m-auto flex flex-wrap items-center justify-between  xl:px-[0px] ${open ? 'px-[0px]' : 'px-[5px]'}`}>
+        <div className={`fixed top-0 left-0 z-[999] w-[100%] bg-custom-dark-blue py-[10px] transition-colors duration-300 ${!scroll ? 'lg:bg-transparent' : 'lg:bg-[#164147] border border-b-1 border-b-custom-gold border-l-0 border-r-0 border-t-0'} ${!open ? 'bg-none' : 'bg-custom-dark-blue'}`}>
+            <nav className={`max-w-[1190px] m-auto flex flex-wrap items-center justify-between  xl:px-[0px] ${open ? 'px-[0px]' : 'px-[5px]'}`}>
                 <div className="navFirstBlock flex gap-[15px]">
                     <div className="navButton1">
                         <button onClick={handleMenu} className="text-[30px] w-[79px] h-[42px] inline-block rounded-[18px] bg-[#E8C992]">
@@ -37,7 +37,7 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className={`navButton2 `}>
-                        <button className="text-white font-[montserrat] text-[15px] w-[153px] h-[43px] md:w-[183px] border border1 border-[#C5C3B6] rounded-[28px]">
+                        <button className="text-white font-[montserrat] text-[15px] w-[153px] h-[43px] md:w-[183px] border border-[#C5C3B6] rounded-[28px] hover:bg-custom-gold transition duration-1000">
                             Выбор квартир
                         </button>
                     </div>
