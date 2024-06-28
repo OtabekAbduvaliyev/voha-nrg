@@ -4,7 +4,7 @@ const SliderPrice = () => {
 
 
   return (
-    <Carousel autoplay infinite={true} autoplaySpeed={2000}>
+    <Carousel autoplay infinite={true} autoplaySpeed={2000} draggable={true} dots={false}>
       <div>
         <div className="slider text-[Inter] m-auto max-w-[1190px] pt-[150px] rounded rounded-[20px] pb-[120px] px-[20px] lg:px-[0px] text-custom-dark-blue">
 

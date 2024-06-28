@@ -69,10 +69,22 @@ const Technologies = () => {
             <div className="finalBlock max-w-[1190px] m-auto mt-[150px]">
                 <h1 className='text-[40px] font-[500] headlineFont text-custom-dark-blue'>Ход строительства</h1>
                 <div className="imgs flex flex-wrap justify-center gap-[20px] xs:justify-between mt-[50px] mb-[100px]">
-                    <img src={monthImg1} alt="" />
-                    <img src={monthImg2} alt="" />
-                    <img src={monthImg3} alt="" />
-                    <img src={monthImg4} alt="" />
+                    <div className="img">
+                        <p className='absolute mt-[356px] ml-[25px] text-[white] text-[26px] text-Inter'>Май</p>
+                        <img src={monthImg1} alt="" />
+                    </div>
+                    <div className="img">
+                        <p className='absolute mt-[356px] ml-[25px] text-[white] text-[26px] text-Inter'>Апрель</p>
+                        <img src={monthImg2} alt="" />
+                    </div>
+                    <div className="img">
+                        <p className='absolute mt-[356px] ml-[25px] text-[white] text-[26px] text-Inter'>Март</p>
+                        <img src={monthImg3} alt="" />
+                    </div>
+                    <div className="img">
+                        <p className='absolute mt-[356px] ml-[25px] text-[white] text-[26px] text-Inter'>Февраль</p>
+                        <img src={monthImg4} alt="" />
+                    </div>
                 </div>
             </div>
         </div>

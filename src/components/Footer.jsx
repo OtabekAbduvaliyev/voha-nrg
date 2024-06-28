@@ -87,13 +87,19 @@ const Footer = () => {
                     <div className="socialMedia flex items-center justify-between max-w-[490px] mt-[40px]">
                         <div className="icons flex text-[22px]  gap-[15px]">
                             <div className='p-[8px] bg-custom-dark-blue rounded-[50%]'>
+                                <a target='_blank' href="https://www.facebook.com/nrg.uzbekistan">
                                 <FaFacebook className='text-custom-gold' />
+                                </a>
                             </div>
                             <div className='p-[8px] bg-custom-dark-blue rounded-[50%]'>
+                                <a target='_blank' href="https://t.me/nrguzb">
                                 <FaTelegram className='text-custom-gold' />
+                                </a>
                             </div>
                             <div className='p-[8px] bg-custom-dark-blue rounded-[50%]'>
+                                <a target='_blank' href="https://www.instagram.com/nrg_uzbekistan/">
                                 <RiInstagramFill className='text-custom-gold' />
+                                </a>
                             </div>
                         </div>
                         <div className="toTopBtn">

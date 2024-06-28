@@ -40,19 +40,7 @@
     width: 100%;
     height: 100vh; /* Full viewport height */
 }
-.carousel-container {
-    max-width: 80%;
-    margin: auto;
-  }
+
   
-  .carousel-item {
-    height:200px;
-    /* opacity: 0.5; Dim other items */
-    transition: 0.3s ease, transform 0.3s ease; /* Smooth transition for focus */
-  }
-  
-  .carousel-item.focused {
-    opacity: 1;
-    transform: scale(1.5); /* Slightly enlarge focused item */
-  }
+
   
