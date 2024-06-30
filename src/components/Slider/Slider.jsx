@@ -1,4 +1,4 @@
-import "./slider.css";
+
 
 import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
