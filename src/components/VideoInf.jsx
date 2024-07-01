@@ -9,7 +9,7 @@ const VideoModal = () => {
 
     return (
         <section className="max-w-[1190px] mx-auto flex lg:justify-between items-center flex-wrap px-[20px] lg:px-[0px] justify-center text-center lg:text-start bemalol">
-            <div className="relative">
+            <div className="relative" >
                 {/* Video Modal Image */}
                 <div className=" ">
                     <img

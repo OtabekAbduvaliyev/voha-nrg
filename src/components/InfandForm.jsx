@@ -1,23 +1,24 @@
 import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import CountUp from 'react-countup';
 const InfandForm = () => {
   return (
-    <div className='max-w-[1190px] m-auto mt-[100px] pb-[100px]'>
+    <div className='max-w-[1190px] m-auto pt-[100px] pb-[100px]' id='form'>
         <div className="infWithNumbers grid lg:grid-cols-4 justify-between  grid-cols-2 gap-[20px]">
             <div className='text-center'>
-                <p className='headlineFont text-[50px] text-custom-gold'>2.6 га </p>
+                <p className='headlineFont text-[50px] text-custom-gold'><CountUp start={0} end={2.6} duration={3} /> </p>
                 <p className='text-[18px] text-[white]'>ПЛОЩАДЬ ОБЪЕКТА</p>
             </div>
             <div className='text-center'>
-                <p className='headlineFont text-[50px] text-custom-gold'>2 </p>
+                <p className='headlineFont text-[50px] text-custom-gold'><CountUp start={0} end={2} duration={3}/> </p>
                 <p className='text-[18px] text-[white]'>ОЧЕРЕДИ</p>
             </div>
             <div className='text-center'>
-                <p className='headlineFont text-[50px] text-custom-gold'>200 </p>
+                <p className='headlineFont text-[50px] text-custom-gold'><CountUp start={0} end={200}  duration={2}/></p>
                 <p className='text-[18px] text-[white]'>КОЛ-ВО КВАРТИР</p>
             </div>
             <div className='text-center'>
-                <p className='headlineFont text-[50px] text-custom-gold'>5</p>
+                <p className='headlineFont text-[50px] text-custom-gold'><CountUp start={0} end={5} duration={1}/></p>
                 <p className='text-[18px] text-[white]'>ЭТАЖНОСТЬ</p>
             </div>
         </div>

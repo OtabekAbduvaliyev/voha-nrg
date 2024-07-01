@@ -54,19 +54,26 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className={`navButton2 `}>
-                        <button className="text-white font-[montserrat] text-[15px] w-[153px] h-[43px] md:w-[183px] border border-[#C5C3B6] rounded-[28px] hover:bg-custom-gold transition duration-1000">
-                            Выбор квартир
-                        </button>
+                        <a href="#form">
+
+                            <button className="text-white font-[montserrat] text-[15px] w-[153px] h-[43px] md:w-[183px] border border-[#C5C3B6] rounded-[28px] hover:bg-custom-gold transition duration-1000">
+                                Выбор квартир
+                            </button>
+                        </a>
                     </div>
                     <div className="navButton3 font-montserrat hidden md:block">
-                        <button className="text-[12px] w-[42px] h-[42px] border border1 border-[#C5C3B6] rounded-[50%] text-white">
-                            3D тур
-                        </button>
+                        <a target='_blank' href="https://earth.google.com/web/search/NRG+OYBEK+(by+NRG),+Tashkent/@41.29287917,69.2817476,433.85510856a,469.34457918d,35.00178989y,102.95218889h,60t,0r/data=CocBGl0SVwolMHgzOGFlOGI0MzUzYjFhYTZmOjB4MTQ2ZGE4NDAxNzljOGZmORnZTd8he6VEQCFnCGxzCFJRQCocTlJHIE9ZQkVLIChieSBOUkcpLCBUYXNoa2VudBgBIAEiJgokCTvL1ZwUYkVAEfB2ctkmX0VAGcfJqi3YqVFAIWXYuKZcplFAOgMKATA">
+                            <button className="text-[12px] w-[42px] h-[42px] border border1 border-[#C5C3B6] rounded-[50%] text-white">
+                                3D тур
+                            </button>
+                        </a>
                     </div>
                     <div className="navButton4 hidden md:block">
-                        <button className="w-[42px] h-[42px] border border1 border-[#C5C3B6] rounded-[50%] text-white">
-                            <GoDownload className="m-auto" />
-                        </button>
+                        <a href="../pdf/Resume.pdf" download="Resume.pdf">
+                            <button className="w-[42px] h-[42px] border border1 border-[#C5C3B6] rounded-[50%] text-white">
+                                <GoDownload className="m-auto" />
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div className="navSecondBlock flex justify-center">
@@ -76,21 +83,23 @@ const Navbar = () => {
                 </div>
                 <div className={`navThridBlock text-white font-montserrat flex items-center gap-[20px] lg:gap-[40px] ${open ? 'absolute mt-[276px] w-[100%] py-[30px] flex flex-col items-startx bg-custom-dark-blue px-[0px]' : 'hidden'} lg:flex`}>
                     <select id="options" className="bg-transparent focus:outline-none sm:text-sm p-2">
-                        <option value="option1">Ru</option>
-                        <option value="option2">Eng</option>
-                        <option value="option3">Uzb</option>
-                        <option value="option4">Kz</option>
+                        <option value="option1" className='text-[black]'>Ru</option>
+                        <option value="option2" className='text-[black]'>Eng</option>
+                        <option value="option3" className='text-[black]'>Uzb</option>
+                        <option value="option4" className='text-[black]'>Kz</option>
                     </select>
-                        <a target='_blank' href="https://zoom.us/">
-                    <div className="callBlock flex items-center gap-[5px]">
-                        <IoCallOutline className="text-[28px]" />
-                        <h1 className="text-[21px]">1060</h1>
-                    </div>
-                        </a>
+                    <a target='_blank' href="https://zoom.us/">
+                        <div className="callBlock flex items-center gap-[5px]">
+                            <IoCallOutline className="text-[28px]" />
+                            <h1 className="text-[21px]">1060</h1>
+                        </div>
+                    </a>
                     <div className="navButton">
-                        <button className="text-white font-[montserrat] text-[15px] w-[183px] h-[43px] border border1 border-[#C5C3B6] rounded-[28px]">
-                            Заказать звонок
-                        </button>
+                        <a href="#form">
+                            <button className="text-white font-[montserrat] text-[15px] w-[183px] h-[43px] border border1 border-[#C5C3B6] rounded-[28px]">
+                                Заказать звонок
+                            </button>
+                        </a>
                     </div>
                 </div>
             </nav>

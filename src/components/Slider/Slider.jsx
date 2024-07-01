@@ -35,7 +35,7 @@ export const Slider = () => {
         autoplay={{ delay: 2500 }}
         loop={true}
         speed={600}
-        className='w-[100%] m-auto h-auto items-center pl-[30px]'
+        className='w-[100%] m-auto h-[500px] items-center pl-[30px]'
         onSwiper={setSwiperInstance}
       >
         <SwiperSlide className='m-auto'><img className="m-auto w-[100%] h-[100%]" src="https://voha.u-nrg.uz/img/design/3.jpg" alt="" /></SwiperSlide>
