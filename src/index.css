@@ -9,10 +9,15 @@
 
 @font-face {
     font-family: 'Kudryashev Headline';
-    src: url('./fonts/KudryashevDisplay-Regular.woff2') format('woff2'),
-    url('./fonts/Marianna.woff2') format('woff2');
+    src: url('./fonts/KudryashevDisplay-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+};
+@font-face {
+  font-family: 'Marianna';
+  src: url('./fonts/Marianna.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 };
 .headerHdFont, .bemalol {
     font-family: 'Kudryashev Headline', sans-serif;
