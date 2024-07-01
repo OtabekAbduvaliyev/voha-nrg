@@ -8,8 +8,8 @@ const InfandForm = () => {
     const messageText = `Name: ${message}\nPhone Number: ${phoneNumber}`;
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const token = '7358049875:AAHaRei9l_v6d95lI_qynvuOtGDFVr0pqLw';  // Replace with your bot token
-        const chatId = '6106205006';  // Replace with your chat ID
+        const token = '7358049875:AAHaRei9l_v6d95lI_qynvuOtGDFVr0pqLw'; 
+        const chatId = '6106205006'; 
 
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
@@ -21,6 +21,7 @@ const InfandForm = () => {
             });
             setMessage('');
             setPhoneNumber('')
+            alert('your message sent succesfuly')
         } catch (error) {
             console.error('Error sending message:', error);
         }
