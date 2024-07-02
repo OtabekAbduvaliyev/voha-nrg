@@ -161,11 +161,11 @@ const Descriptions = () => {
       </div>
       <InfandForm />
       <Slider />
-      <div className="firstdesc max-w-[1190px] m-auto flex flex-wrap  lg:flex-nowrap mt-[160px] gap-[100px] px-[10px]">
+      <div className="firstdesc max-w-[1190px] m-auto flex flex-wrap items-end lg:flex-nowrap mt-[160px] gap-[100px] px-[10px]">
         <div className="frdescrtbl flex flex-col lg:justify-between">
           <h1 className='headlineFont text-[40px] font-[500] text-[white]'>Тренажёрный зал</h1>
-          <p className='text-[16px] font-Inter text-white mt-[30px]'>Одним из преимуществ, насладиться жители NRG <br />   VOHA является свой собственный тренажерный зал. <br /> <br /> В нем будут установлены  современные спортивные <br /> тренажеры и установки, которые позволяют заниматься спортом и <br /> поддерживать физическую форму не выходя из дома. <br />   <br /> СХЕМА БЛОКИРОВКИ </p>
-          <img src={descImg9} alt="" className='mt-[70px] lg:mt-[0px]' />
+          <p className='text-[16px] font-Inter text-white mt-[30px]'>Одним из преимуществ, насладиться жители NRG <br />   VOHA является свой собственный тренажерный зал. <br /> <br /> В нем будут установлены  современные спортивные <br /> тренажеры и установки, е позволяют заниматься спортом и <br /> поддерживать физическую форму не выходя из дома. <br />   <br /> СХЕМА БЛОКИРОВКИ </p>
+          <img src={descImg9} alt="" className='mt-[70px] lg:pt-[48px]' />
         </div>
         <img src={descImg8} alt="" />
       </div>
@@ -177,19 +177,19 @@ const Descriptions = () => {
           <img src={descImg11} alt="" className='mt-[70px] lg:mt-[0px]' />
         </div>
       </div>
-      <div className="firstdesc max-w-[1190px] m-auto flex flex-wrap  lg:flex-nowrap mt-[160px] gap-[100px] px-[10px]">
+      <div className="firstdesc max-w-[1190px] m-auto flex flex-wrap items-end  lg:flex-nowrap mt-[160px] gap-[100px] px-[10px]">
         <div className="frdescrtbl flex flex-col lg:justify-between">
           <h1 className='headlineFont text-[40px] font-[500] text-[white]'>Gentlemen's club</h1>
           <p className='text-[16px] font-Inter text-white mt-[30px]'>Изысканный интерьер, высококачественные материалы и <br /> внимание к деталям создают уникальное пространство для    <br /> истинных ценителей комфорта. Эта комната станет идеальным местом для встреч с друзьями и соседями. </p>
-          <img src={descImg13} alt="" className='mt-[70px] lg:mt-[0px]' />
+          <img src={descImg13} alt="" className='mt-[70px] lg:pt-[144px]' />
         </div>
         <img src={descImg12} alt="" />
       </div>
-      <div className="firstdesc max-w-[1190px] m-auto flex flex-wrap  lg:flex-nowrap mt-[160px] gap-[100px] px-[10px]">
+      <div className="firstdesc max-w-[1190px] m-auto flex flex-wrap items-end  lg:flex-nowrap mt-[160px] gap-[100px] px-[10px]">
         <div className="frdescrtbl flex flex-col lg:justify-between">
           <h1 className='headlineFont text-[40px] font-[500] text-[white]'>Детская комната  </h1>
           <p className='text-[16px] font-Inter text-white mt-[30px]'>Здесь каждый момент - это приключение, наполненное Вдохновением и безграничными возможностями для маленьких исследователей. Всё пространство соответствует технике безопастности.</p>
-          <img src={descImg15} alt="" className='mt-[70px] lg:mt-[0px] h-[]' />
+          <img src={descImg15} alt="" className='mt-[70px] lg:pt-[150px] h-[]' />
         </div>
         <img src={descImg14} alt="" />
       </div>
