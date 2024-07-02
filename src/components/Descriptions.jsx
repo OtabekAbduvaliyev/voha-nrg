@@ -95,11 +95,11 @@ const Descriptions = () => {
           <img src={descImg2} alt="" className='mt-[70px] lg:mt-[0px]' />
         </div>
       </div>
-      <div className="headLine justify-center flex mt-[100px]">
+      <div className="headLine justify-center flex mt-[150px]">
         <h1 className='headlineFont text-[30px] md:text-[40px] text-[#DDCAA0]'>На побережье </h1>
         <p className='marianna text-[90px] md:text-[120px] text-[white] ml-[-40px] leading-[104px]'>Карасу</p>
       </div>
-      <div className="secondesc flex items-center max-w-[1280px] ml-auto justify-between px-[10px] lg:px-[0px] flex-wrap md:flex-nowrap mt-[90px] 2xl:m-auto 2xl:pt-[100px]">
+      <div className="secondesc flex items-center max-w-[1280px] ml-auto justify-between px-[10px] lg:px-[0px] flex-wrap md:flex-nowrap mt-[70px] 2xl:m-auto 2xl:pt-[100px]">
         <div className="indesc text-[white] text-[16px] font-Inter mr-[100px]">
           <p>Протекающий в Ташкенте и Ташкентской области, канал <br /> является левым отводом канала Бозсу и занимает особое <br /> место в NRG VOHA. <br /> <br /> Расположившись между домами жилого комплекса, он <br /> становится центром притяжения, душой проекта и одним <br /> из самых важных его преимуществ.</p>
         </div>
@@ -142,7 +142,7 @@ const Descriptions = () => {
         </div>
       </div>
       <div className="smallerDescs max-w-[1190px] m-auto pt-[]">
-        <div className="first flex justify-between items-center gap-[10px] flex-wrap lg:flex-nowrap mt-[150px] px-[10px]">
+        <div className="first flex justify-between items-center gap-[10px] flex-wrap lg:flex-nowrap pt-[156px] px-[10px]">
           <img src={descImg5} alt="" />
           <div className="inf">
             <h1 className='text-[white] text-[40px] headlineFont'>Зона BBQ</h1>
@@ -151,7 +151,7 @@ const Descriptions = () => {
         </div>
       </div>
       <div className="smallerDescs max-w-[1190px] m-auto pt-[]">
-        <div className="first flex justify-between items-center gap-[10px] flex-wrap lg:flex-nowrap mt-[150px] px-[10px]">
+        <div className="first flex justify-between items-center gap-[10px] flex-wrap lg:flex-nowrap mt-[70px] px-[10px]">
           <div className="inf">
             <h1 className='text-[white] text-[40px] headlineFont'>  Гостевой паркинг</h1>
             <p className='text-[16px] text-[white] font-Inter mt-[50px]'>Ваши друзья и знакомые смогут спокойно оставлять <br /> автомобиль в безопасной и охраняемой зоне жилого <br /> комплекса. Больше не придется думать где припарковаться.</p>

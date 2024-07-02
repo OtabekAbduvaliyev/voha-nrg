@@ -63,7 +63,7 @@ const Comforts = () => {
     ]
     return (
         <>
-            <div className='max-w-[1290px]  m-auto flex flex-wrap md:flex-nowrap  justify-center md:justify-between items-center py-[110px] pr-[50px]'>
+            <div className='max-w-[1350px] xl:px-[30px]  m-auto flex flex-wrap gap-[113px] md:flex-nowrap  justify-center md:justify-between items-center py-[110px] pr-[50px]'>
                 <div className="comfortsInf text-white text-[16px]"> <span className='text-[16px] font-[500] text-custom-gold'> NRG VOHA  - </span>
                     станет одним из самых ярких <br /> проектов Ташкента уже благодаря последним <br /> <span className='text-[#ACB9A1]'>тенденциям современной архитектуры</span> и <br /> соответствию самым <span className='text-[#ACB9A1]'> высоким стандартам <br /> качества.</span> <br /> <br />
                     Фасад здания - настоящий пример стиля, <br /> грации и изысканности.
@@ -71,7 +71,7 @@ const Comforts = () => {
                 <div className="comfortsCards grid lg:grid-cols-3 grid-cols-2  gap-[40px] mt-[50px] md:mt-[0px]">
                     {comforts.map((cardItem) => {
                         return (
-                            <div className="card flex items-start gap-[12px]">
+                            <div className="card flex items-start gap-[22px]">
                                 <div className="cardLogo">
                                     {cardItem.logo}
                                 </div>
