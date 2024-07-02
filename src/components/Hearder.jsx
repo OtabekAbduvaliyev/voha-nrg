@@ -10,7 +10,7 @@ const Hearder = () => {
     });
   };
   return (
-<div className='bgHeader bg-cover bg-center h-screen flex flex-col justify-end'>
+<div className='bgHeader bg-cover bg-center h-[50vh] flex flex-col justify-end'>
   <Navbar />
   <header className="max-w-[1200px] mx-auto flex justify-between items-end w-full ">
     <div className="infor flex justify-center flex-col items-center justitems-center lg:flex-row justify-end px-[20px] lg:px-[0px] gap-[-60px] lg:mb-[-100px]">

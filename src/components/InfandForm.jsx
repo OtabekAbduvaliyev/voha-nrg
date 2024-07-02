@@ -3,6 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import CountUp from 'react-countup';
 import axios from 'axios';
 const InfandForm = () => {
+    const [check,setCheck] = useState(false)
     const [message, setMessage] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('')
     const messageText = `Name: ${message}\nPhone Number: ${phoneNumber}`;
@@ -26,7 +27,9 @@ const InfandForm = () => {
             console.error('Error sending message:', error);
         }
     };
-
+    const  checking = ()=>{
+        setCheck(!check)
+    }
     return (
         <div className='max-w-[1190px] m-auto pt-[100px] pb-[100px]' id='form'>
             <div className="infWithNumbers grid lg:grid-cols-4 justify-between  grid-cols-2 gap-[20px]">
@@ -55,7 +58,8 @@ const InfandForm = () => {
                     <button onClick={handleSubmit} className='text-[16px] font-Inter flex items-center gap-[20px] text-[white] font-[400]' >Отправить <span className='w-[53px] h-[53px] border border-custom-gold rounded rounded-[50%] inline-block'><IoIosArrowRoundForward className='m-auto mt-[35%] text-white' /></span></button>
 
                 </form>
-                <div className="radio text-start font-Inter text-[16px] mt-[30px] ">
+                <div className="radio text-start font-Inter text-[16px] mt-[30px] flex gap-[10px] items-center">
+                    <input onClick={checking} type="radio" className='w-[24px] h-[24px]' checked={check}/>
                     <p className='text-white text-center md:text-start'>Я согласен на обработку <span className='text-custom-gold'> персональных данных</span></p>
                 </div>
             </div>
