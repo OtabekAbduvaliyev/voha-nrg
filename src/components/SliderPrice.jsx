@@ -1,48 +1,63 @@
 
 import { Carousel } from 'antd';
+import { Trans, useTranslation } from 'react-i18next';
 const SliderPrice = () => {
-
+  const { t } = useTranslation()
 
   return (
-    <Carousel autoplay infinite={true} autoplaySpeed={3000} draggable={true} dots={false}>
-      <div>
-        <div className="slider text-[Inter] m-auto max-w-[1190px] pt-[150px] rounded rounded-[20px] pb-[120px] px-[20px] lg:px-[0px] text-custom-dark-blue">
+    <div className='pt-[250px] pb-[72px] priceS'>
 
-          <div className="card bg-white rounded rounded-[20px] p-[40px]">
-            <h1 className='text-[38px]  mb-4 headlineFont'>Выгодные предложения</h1>
-            <h3 className='text-lg font-semibold mb-2'>• При 100% оплате 15% + NRG CLUB CARD</h3>
-            <h2 className='text-xl font-semibold mb-2'>Условия по рассрочке:</h2>
-            <ul className='text-lg font-semibold mb-4'>
-              <li>• Минимальный взнос от 25%</li>
-              <li>• При 30% оплате скидка 3%</li>
-              <li>• При 50% оплате скидка 6%</li>
-              <li>• При 70% оплате скидка 9%</li>
-              <li>• Остаток до АВВЭ</li>
-            </ul>
-            <p className='font-montserrat text-lg mb-4'>Подробности по телефону: 1060 (с мобильного бесплатно) и в офисах продаж NRG.</p>
+      <Carousel autoplay infinite={true} autoplaySpeed={3000} draggable={true} dotPosition="bottom" dots={{ className: 'custom-dots' }}>
+        <div>
+          <div className="sliderPrice text-[Inter] m-auto max-w-[1430px]  rounded rounded-[20px] pb-[120px]  text-custom-dark-blue">
+
+            <div className="card bg-white rounded rounded-[40px] py-[40px] px-[56px] font-montserrat">
+              <h1 className='text-[50px]  headlineFont sliderPriceHeading'>{t('usefulOffer')}</h1>
+              <h3 className='text-[22px] font-semibold font-montserrat mb-2 uls'>{t('pricePersentage')}</h3>
+              <h1 className='text-[28px] font-semibold sliderPriceSmallH mb-2'>{t('comboOffer')}   </h1>
+              <h3 className='text-[22px] font-semibold font-montserrat uls mb-2'>•
+                {t('parkingSklat')}
+              </h3>
+              <h2 className='text-[28px] font-semibold mb-2 sliderPriceSmallH'>{t('paymentTerms')} </h2>
+              <ul className='text-[22px] uls  font-semibold mb-4'>
+                <li>{t('minimalBadal')} </li>
+                <li>{t('discount1')} </li>
+                <li>{t('discount2')} </li>
+                <li>{t('discount3')} </li>
+                <li>{t('discount4')} </li>
+              </ul>
+              <p className='font-montserrat text-[20px] mb-4 italianprice'>{t('extraWordSlider')}</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div className="slider text-[Inter] m-auto max-w-[1190px] pt-[150px] rounded rounded-[20px] pb-[120px] px-[20px] lg:px-[0px] text-custom-dark-blue">
+        <div>
+          <div className="sliderPrice text-[Inter] m-auto max-w-[1430px]  rounded rounded-[20px] pb-[120px]  text-custom-dark-blue">
 
-          <div className="card bg-white rounded rounded-[20px] p-[40px]">
-            <h1 className='text-[38px]  mb-4 headlineFont'>Выгодные предложения</h1>
-            <h3 className='text-lg font-semibold mb-2'>• При 100% оплате 15% + NRG CLUB CARD</h3>
-            <h2 className='text-xl font-semibold mb-2'>Условия по рассрочке:</h2>
-            <ul className='text-lg font-semibold mb-4'>
-              <li>• Минимальный взнос от 25%</li>
-              <li>• При 30% оплате скидка 3%</li>
-              <li>• При 50% оплате скидка 6%</li>
-              <li>• При 70% оплате скидка 9%</li>
-              <li>• Остаток до АВВЭ</li>
-            </ul>
-            <p className='font-montserrat text-lg mb-4'>Подробности по телефону: 1060 (с мобильного бесплатно) и в офисах продаж NRG.</p>
+            <div className="card bg-white rounded rounded-[40px] py-[40px] px-[56px] font-montserrat">
+              <h1 className='text-[50px]  headlineFont sliderPriceHeading'>{t('usefulOffer')}</h1>
+              <h3 className='text-[22px] font-semibold font-montserrat mb-2 uls'>{t('pricePersentage')}</h3>
+              <h1 className='text-[28px] font-semibold sliderPriceSmallH mb-2'>{t('comboOffer')}   </h1>
+              <h3 className='text-[22px] font-semibold font-montserrat uls mb-2'>•
+                {t('parkingSklat')}
+              </h3>
+              <h2 className='text-[28px] font-semibold mb-2 sliderPriceSmallH'>{t('paymentTerms')} </h2>
+              <ul className='text-[22px] uls  font-semibold mb-4'>
+                <li>{t('minimalBadal')} </li>
+                <li>{t('discount1')} </li>
+                <li>{t('discount2')} </li>
+                <li>{t('discount3')} </li>
+                <li>{t('discount4')} </li>
+              </ul>
+              <p className='font-montserrat text-[20px] mb-4 italianprice'>
+                <Trans i18nKey="extraWordSlider">
+                </Trans>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </Carousel>
+      </Carousel>
 
+    </div>
   );
 }
 

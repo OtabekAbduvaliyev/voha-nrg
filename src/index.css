@@ -8,47 +8,58 @@
 
 
 @font-face {
-    font-family: 'Kudryashev Headline';
-    src: url('./fonts/KudryashevDisplay-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Kudryashev Headline';
+  src: url('./fonts/KudryashevDisplay-Sans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 };
+#root {
+  white-space: pre-line;
+}
+
 @font-face {
   font-family: 'Marianna';
   src: url('./fonts/Marianna.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-};
-.headerHdFont, .bemalol {
-    font-family: 'Kudryashev Headline', sans-serif;
 }
-.marianna{
-    font-family: 'Marianna',sans-serif;
+
+;
+
+.headerHdFont,
+.bemalol {
+  font-family: 'Kudryashev Headline', sans-serif;
 }
-.headlineFont{
-    font-family: 'Kudryashev Headline', sans-serif;
+
+.marianna {
+  font-family: 'Marianna', sans-serif;
 }
-.bgHeader{
-    /* background-position: top; */
-    background: 
-    linear-gradient(
-      to bottom, 
-      rgba(0, 0, 0, 0.65) 0%, 
-      rgba(0, 0, 0, 0) 35%, 
-      rgba(0, 0, 0, 0) 65%, 
-      rgba(0, 0, 0, 0.65) 100%
-    ), 
+
+.headlineFont {
+  font-family: 'Kudryashev Headline', sans-serif;
+}
+
+.bgHeader {
+  /* background-position: top; */
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0) 65%,
+      rgba(0, 0, 0, 0.65) 100%),
     url(https://s3-alpha-sig.figma.com/img/81d3/ead4/9b612aa8b7332ca9c95ca99ab5be5795?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcE-BfoweJUnO2dJi2-uuFvLuGFXjmbxu-bE9mfMFy7Z-LUi-heXoJQcv6e6zFX2pRZX7zXl8kjx4nUNVU2xr7J4j3lwPF6jN-wKcul4pFTqWEtyefjKP53-WGwu1kNNc3oGR7kB7gL7bWUAXQqTqddMb~nOVDYw~~9C3rKzl~uXic3cnRx7z4pMrMO0h0GdB1QoZl835AVQEOKmlFMAPDzN8YS9DqIKlnVI8gUHCSw6F-N-WtWYDCj~Uo18mrWFMDGtTcABlvbYST42beNslkmDAdaPzQRIL79Sronm~ywOeOYd6NyZd0x3p0VDMoIBPy6zd7L2ALjqDi57IgoBmw__);
- /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 65%); */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 90vh; /* Full viewport height */
+  background-size: cover;
+  background-position: left center;
+  width: 100%;
+  height: 830px;
+  animation: zoom 35s infinite ease-in-out;
+  background-repeat: no-repeat;
 }
+
 .slider_next,
 .slider_prev {
-  width: 50px;
-  height: 50px;
+  width: 72px;
+  height: 72px;
   background-color: #164247;
   border-radius: 50px;
   border: 1px solid #E8C994;
@@ -67,65 +78,1172 @@
 
 .swiper {
   width: 100%;
+
 }
 
 .swiper-slide {
-  width: 420px !important;
-  height: 420px !important;
-    /* transition: 0.5s; */
+  width: 590px !important;
+  height: 590px !important;
+  /* transiton: 0.5s; */
+  transition: 0.9s;
 }
 
 .swiper-slide-next {
-  width: 490px !important;
-  height: 490px !important;
-  transition: 0.5s;
+  width: 662px !important;
+  height: 662px !important;
+  transition: 0.9s;
 }
 
 
 .swiper-slide-active {
-  width: 420px !important;
-  height: 420px !important;
+  width: 590px !important;
+  height: 590px !important;
+  transition: 0.9s;
 }
+
 html {
   scroll-behavior: smooth;
 }
-@media screen and (max-width:1300px) {
+
+.bgxira {
+  background: rgba(22, 66, 71, 0.3);
+  backdrop-filter: blur(19.5px);
+}
+
+@keyframes zoom {
+  0% {
+    background-size: 108%;
+    /* Start larger */
+  }
+
+  50% {
+    background-size: 100%;
+    /* Go to normal size */
+  }
+
+  100% {
+    background-size: 108%;
+    /* Go back to larger size */
+  }
+}
+
+@keyframes zoom2 {
+  0% {
+    background-size: 308%;
+    /* Start larger */
+  }
+
+  50% {
+    background-size: 318%;
+    /* Go to normal size */
+  }
+
+  100% {
+    background-size: 308%;
+    /* Go back to larger size */
+  }
+}
+
+.navItems {
+  display: none;
+}
+
+.shine-effect {
+  animation: shine 3s infinite;
+}
+
+.live {
+  display: none;
+}
+
+/* CustomDots.css */
+
+.custom-dots li button::after,.custom-dots li button::before {
+  content: "";
+  display: none;
+  z-index: -1;
+}
+
+.custom-dots li button{
+  background: transparent !important;
+ width: 10px !important;
+ border-radius: 50% !important;
+ height: 10px !important;
+ z-index: -1;
+
+}
+.custom-dots li {
+  width: 16px !important;
+  height: 16px !important;
+  background: none;
+  border: 1px solid #ffffff;
+  display: flex;
+  border-radius: 50%;
+  margin-top: -80px;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.custom-dots li.slick-active  {
+  background-color: #ffffff !important;
+  z-index: -1;
+}
+
+.custom-dots li.slick-active::after {
+  display: none;
+  z-index: -1;
+}
+.z-inde{
+  z-index: 999 !important;
+}
+
+@media screen and (max-width:500px) {
+  .slider_next {
+    display: none;
+  }
+
+  .slider_prev {
+    display: none;
+  }
+
+  #button_wrapper h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width:1500px) {
+  .nav,
+  .header,
+  .sliderPrice,.bemalol,.infandform {
+    max-width: 1200px;
+  }
+
+  .header .vohaTitle {
+    font-size: 137.6px;
+  }
+
+  .header .class {
+    font-size: 124px;
+    margin-bottom: -20px;
+    margin-left: -50px;
+  }
+  .todown {
+    width: 128px;
+    height: 128px;
+  }
+
+  .toDwon {
+    margin-bottom: -65px;
+  }
+
+  .navButtonModal,
+  .navButtonForm,
+  .navButton3d,
+  .navButtonInstall {
+    height: 43.19px;
+  }
+
+  .navButton3d,
+  .navButtonInstall {
+    width: 43.19px;
+    font-size: 12px;
+  }
+
+  .navButtonModal {
+    width: 89px;
+  }
+
+  .navButtonForm {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .navLogo {
+    width: 120px;
+    height: 50px;
+  }
+
+  .navButtonSelect {
+    font-size: 14.4px;
+  }
+
+  .navButtonCallIcon,
+  .navButtonNumber {
+    font-size: 21.6px;
+  }
+
+  .bgHeader {
+    height: 664px;
+  }
+
+  .asOfNav {
+    font-size: 24px;
+  }
+
+  .sliderPriceHeading {
+    font-size: 40px;
+  }
+
+  .uls {
+    font-size: 17.6px;
+  }
+
+  .sliderPriceSmallH {
+    font-size: 22.4px;
+  }
+
+  .italianprice {
+    font-size: 16px;
+  }
+  .vInfHeading{
+    font-size:52px ; 
+  }
+  .vInftext{
+    font-size: 17.6px;
+    margin-top: 36.8px;
+  }
+  .videoimg{
+    width: 640px;
+    height: 360px;
+  }
+  .sliderP{
+    padding-top:200px ;
+  }
   .swiper-slide {
-    width: 400px !important;
-    height: 400px !important;
-      transition: 0.1s;
+    width: 460.3px !important;
+    height: 460.3px !important;
+    /* transiton: 0.5s; */
+    transition: 0.9s;
   }
-  .swiper{
-    margin: auto;
-    padding-left: 30px;
-  }
+  
   .swiper-slide-next {
-    width: 470px !important;
-    height: 470px !important;
-    transition: 0.5s;
+    width: 517px !important;
+    height: 517px !important;
+    transition: 0.9s;
   }
   
   
   .swiper-slide-active {
-    width: 400px !important;
-    height: 400px !important;
-    transition: 0.1s;
-
+    width: 460.3px !important;
+    height: 460.3px !important;
+    transition: 0.9s;
   }
+  .slider_next,
+.slider_prev {
+  width: 57px;
+  height: 57px;
 }
-@media screen and (max-width:500px){
-  .slider_next{
+.numberInfs{
+  font-size: 52px;
+}
+.textInfs{
+  font-size: 17.6px;
+}
+.formHeading{
+  font-size: 40px;
+}
+.formInputName,.formInputPhone{
+  width: 272px;
+  font-size:18px ;
+}
+.formPart{
+  max-width: 950px;
+}
+}
+
+@media screen and (max-width:1400px) {
+  .liveorg {
+    width: 49.5px;
+    height: 49.5px;
+  }
+
+  .liveorg p {
+    font-size: 7px;
+  }
+
+  .nav,
+  .header,
+  .sliderPrice,
+  .bemalol,.infandform {
+    max-width: 1150px;
+  }
+
+  .header .vohaTitle {
+    font-size: 129px;
+    line-height: 110px;
+  }
+
+  .infor {
+    margin-bottom: -65px;
+  }
+
+  .header .class {
+    font-size: 116.25px;
+    margin-bottom: -30px;
+    margin-left: -50px;
+  }
+
+  .asOfNav {
+    font-size: 22.5px;
+  }
+
+  .closeButton {
+    font-size: 12px
+  }
+
+  .s-medias {
+    padding: 10px;
+  }
+
+  .todown {
+    width: 120px;
+    height: 120px;
+  }
+
+  .toDwon {
+    margin-bottom: -65px;
+  }
+
+  .navButtonModal,
+  .navButtonForm,
+  .navButton3d,
+  .navButtonInstall {
+    height: 40.5px;
+  }
+
+  .navButton3d,
+  .navButtonInstall {
+    width: 40.5px;
+    font-size: 11.25px;
+  }
+
+  .navButtonModal {
+    width: 84px;
+    font-size: 19.5px;
+  }
+
+  .navButtonForm {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .navLogo {
+    width: 112.5px;
+    height: 47.78px;
+  }
+
+  .navButtonSelect {
+    font-size: 13.5px;
+  }
+
+  .navButtonCallIcon,
+  .navButtonNumber {
+    font-size: 20.25px;
+  }
+
+  .bgHeader {
+    height: 622px;
+  }
+
+  .sliderPriceHeading {
+    font-size: 37.5px;
+  }
+
+  .uls {
+    font-size: 16.5px;
+  }
+
+  .sliderPriceSmallH {
+    font-size: 21px;
+  }
+
+  .italianprice {
+    font-size: 15px;
+  }
+  .vInfHeading{
+    font-size:48.75px ; 
+    line-height: 60px;
+  }
+  .vInftext{
+    font-size: 16.5px;
+    margin-top: 34.5px;
+  }
+  .videoimg{
+    width: 600px;
+    height: 337.5px;
+  }
+  .sliderP{
+    padding-top:190px ;
+  }
+  .swiper-slide {
+    width: 429.5px !important;
+    height: 429.5px !important;
+    /* transiton: 0.5s; */
+    transition: 0.9s;
+  }
+  
+  .swiper-slide-next {
+    width: 482.5px !important;
+    height: 482.5px !important;
+    transition: 0.9s;
+  }
+  
+  
+  .swiper-slide-active {
+    width: 429.5px !important;
+    height: 429.5px !important;
+    transition: 0.9s;
+  }
+  .slider_next,
+.slider_prev {
+  width: 54px;
+  height: 54px;
+}
+.numberInfs{
+  font-size: 48.75px;
+}
+.textInfs{
+  font-size: 16.5px;
+}
+.formHeading{
+  font-size: 37.5px;
+}
+.formInputName,.formInputPhone{
+  width: 255px;
+  font-size:16px ;
+}
+.formPart{
+  max-width: 820px;
+}
+}
+
+@media screen and (max-width:1300px) {
+
+  .nav,
+  .header,
+  .sliderPrice,.bemalol,.infandform {
+    max-width: 1100px;
+  }
+
+  .header .vohaTitle {
+    font-size: 120.4px;
+    line-height: 110px;
+  }
+
+  .infor {
+    margin-bottom: -65px;
+  }
+
+  .header .class {
+    font-size: 108.5px;
+    margin-bottom: -30px;
+    margin-left: -50px;
+  }
+
+  .todown {
+    width: 112px;
+    height: 112px;
+  }
+
+  .toDwon {
+    margin-bottom: -65px;
+  }
+
+  .navButtonModal,
+  .navButtonForm,
+  .navButton3d,
+  .navButtonInstall {
+    height: 37.8px;
+  }
+
+  .navButton3d,
+  .navButtonInstall {
+    width: 37.8px;
+    font-size: 10.5px;
+  }
+
+  .navButtonModal {
+    width: 78.39px;
+    font-size: 19.5px;
+  }
+
+  .navButtonForm {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .navLogo {
+    width: 105.5px;
+    height: 44.59px;
+  }
+
+  .navButtonSelect {
+    font-size: 12.6px;
+  }
+
+  .navButtonCallIcon,
+  .navButtonNumber {
+    font-size: 18.9px;
+  }
+
+  .bgHeader {
+    height: 581px;
+  }
+
+  .sliderPriceHeading {
+    font-size: 35px;
+  }
+
+  .uls {
+    font-size: 15.4px;
+  }
+
+  .sliderPriceSmallH {
+    font-size: 19.6px;
+  }
+
+  .italianprice {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 35px 49px;
+    border-radius: 25px;
+  }
+  .vInfHeading{
+    font-size:45.5px ; 
+  }
+  .vInftext{
+    font-size: 15.4px;
+    margin-top: 32.2px;
+  }
+  .videoimg{
+    width: 560px;
+    height: 315px;
+  }
+    .sliderP{
+    padding-top:180px ;
+  }
+  .swiper-slide {
+    width: 398.69px !important;
+    height: 398.69px !important;
+    /* transiton: 0.5s; */
+    transition: 0.9s;
+  }
+  
+  .swiper-slide-next {
+    width: 448px !important;
+    height: 448px !important;
+    transition: 0.9s;
+  }
+  
+  
+  .swiper-slide-active {
+    width: 398.69px !important;
+    height: 398.69px !important;
+    transition: 0.9s;
+  }
+  .slider_next,
+.slider_prev {
+  width: 50.39px;
+  height: 50.39px;
+}
+.sliderHeading{
+  font-size: 120px;
+}
+.numberInfs{
+  font-size: 45.5px;
+}
+.textInfs{
+  font-size: 15.4px;
+}
+.formHeading{
+  font-size: 35px;
+}
+.formInputName,.formInputPhone{
+  width: 238px;
+  font-size:14px ;
+}
+.formPart{
+  max-width: 850px;
+}
+.userAgreement{
+  font-size: 13.3px;
+}
+.radiobek{
+  width: 21px;
+  height: 21px;
+}
+}
+
+@media screen and (max-width:1200px) {
+
+  .nav,
+  .header,
+  .sliderPrice,.bemalol,.infandform {
+    max-width: 1000px;
+  }
+
+  .header .vohaTitle {
+    font-size: 111.8px;
+    line-height: 110px;
+  }
+
+  .infor {
+    margin-bottom: -65px;
+  }
+
+  .header .class {
+    font-size: 100.75px;
+    margin-bottom: -20px;
+    margin-left: -45px;
+  }
+
+  .todown {
+    width: 104px;
+    height: 104px;
+  }
+
+  .toDwon {
+    margin-bottom: -55px;
+  }
+
+  .navButtonModal,
+  .navButtonForm,
+  .navButton3d,
+  .navButtonInstall {
+    height: 35.09px;
+  }
+
+  .navButton3d,
+  .navButtonInstall {
+    width: 35.09px;
+    font-size: 9.75px;
+  }
+
+  .navButtonModal {
+    width: 72.8px;
+    font-size: 19.5px;
+  }
+
+  .navButtonForm {
+    width: 130px;
+    font-size: 11.7px;
+    padding: 6.5px;
+  }
+
+  .navLogo {
+    width: 97.5px;
+    height: 41.41px;
+  }
+
+  .navButtonSelect {
+    font-size: 11.7px;
+  }
+
+  .navButtonCallIcon,
+  .navButtonNumber {
+    font-size: 17.55px;
+  }
+
+  .bgHeader {
+    height: 539px;
+  }
+
+  .asOfNav {
+    font-size: 19.5px;
+  }
+
+  .closeButton {
+    font-size: 11px
+  }
+
+  .s-medias {
+    padding: 8px;
+  }
+
+  .s-medias a {
+    font-size: 22px;
+  }
+
+  .sliderPriceHeading {
+    font-size: 32.5px;
+  }
+
+  .uls {
+    font-size: 14.3px;
+  }
+
+  .sliderPriceSmallH {
+    font-size: 18.2px;
+  }
+
+  .italianprice {
+    font-size: 13px;
+  }
+
+  .card {
+    padding: 32.5px 45.5px;
+    border-radius: 25px;
+  }
+  .vInfHeading{
+    font-size:42.25px ; 
+  }
+  .vInftext{
+    font-size: 14.3px;
+    margin-top: 29.9px;
+  }
+  .videoimg{
+    width: 520px;
+    height: 292.5px;
+  }
+  .sliderP{
+    padding-top:170px ;
+  }
+  .swiper-slide {
+    width: 367.3px !important;
+    height: 367.3px !important;
+    /* transiton: 0.5s; */
+    transition: 0.9s;
+  }
+  
+  .swiper-slide-next {
+    width: 413.5px !important;
+    height: 413.5px !important;
+    transition: 0.9s;
+  }
+  
+  
+  .swiper-slide-active {
+    width: 367.3px !important;
+    height: 367.3px !important;
+    transition: 0.9s;
+  }
+  .slider_next,
+.slider_prev {
+  width: 57px;
+  height: 57px;
+}
+.numberInfs{
+  font-size: 42.25px;
+}
+.textInfs{
+  font-size: 14.3px;
+}
+.formHeading{
+  font-size: 32.5px;
+}
+.formInputName,.formInputPhone{
+  width: 221px;
+  font-size:12px ;
+}
+.formPart{
+  max-width: 720px;
+  margin-top: 120px;
+}
+.infandform{
+  padding-top: 0px;
+}
+}
+
+@media screen and (max-width:1100px) {
+
+  .nav,
+  .header,
+  .sliderPrice,
+  .bemalol,
+  .infandform {
+    max-width: 950px;
+  }
+
+  .header .vohaTitle {
+    font-size: 103.2px;
+    line-height: 100px;
+  }
+
+  .infor {
+    margin-bottom: -55px;
+  }
+
+  .header .class {
+    font-size: 93px;
+    margin-bottom: -20px;
+    margin-left: -40px;
+  }
+
+  .todown {
+    width: 96px;
+    height: 96px;
+  }
+
+  .toDwon {
+    margin-bottom: -55px;
+  }
+
+  .navButtonModal,
+  .navButtonForm,
+  .navButton3d,
+  .navButtonInstall {
+    height: 32.39px;
+  }
+
+  .navButton3d,
+  .navButtonInstall {
+    width: 32.39px;
+    font-size: 9px;
+  }
+
+  .navButtonModal {
+    width: 67.19px;
+    font-size: 19.5px;
+  }
+
+  .navButtonForm {
+    width: 120px;
+    font-size: 10.8px;
+    padding: 6px;
+  }
+
+  .navLogo {
+    width: 90px;
+    height: 38.23px;
+  }
+
+  .navButtonSelect {
+    font-size: 10.8px;
+  }
+
+  .navButtonCallIcon,
+  .navButtonNumber {
+    font-size: 16.2px;
+  }
+
+  .bgHeader {
+    height: 498px;
+  }
+
+  .sliderPriceHeading {
+    font-size: 30px;
+  }
+
+  .uls {
+    font-size: 13.2px;
+  }
+
+  .sliderPriceSmallH {
+    font-size: 14.4px;
+  }
+
+  .italianprice {
+    font-size: 12px;
+  }
+
+  .card {
+    padding: 30px 42px;
+    border-radius: 25px;
+  }
+  .vInfHeading{
+    font-size:39px ; 
+  }
+  .vInftext{
+    font-size: 13.2px;
+    margin-top: 29.9px;
+  }
+  .videoimg{
+    width: 480px;
+    height: 270px;
+  }
+  .sliderP{
+    padding-top:160px ;
+  }
+  .swiper-slide {
+    width: 337.3px !important;
+    height: 337.3px !important;
+    /* transiton: 0.5s; */
+    transition: 0.9s;
+  }
+  
+  .swiper-slide-next {
+    width: 379px !important;
+    height: 379px !important;
+    transition: 0.9s;
+  }
+  
+  
+  .swiper-slide-active {
+    width: 337.3px !important;
+    height: 337.3px !important;
+    transition: 0.9s;
+  }
+  .slider_next,
+.slider_prev {
+  width: 57px;
+  height: 57px;
+}
+}
+
+@media screen and (max-width:980px) {
+
+  .nav,
+  .header,
+  .sliderPrice,
+  .bemalol {
+    max-width: 800px;
+    padding: 0px 30px;
+  }
+
+  .header .vohaTitle {
+    font-size: 73.1px;
+    line-height: 70px;
+  }
+
+  .navbar {
+    padding: 10px 0px;
+  }
+
+  .infor {
+    margin-bottom: -55px;
+  }
+
+  .header .class {
+    font-size: 65.875px;
+    margin-bottom: -20px;
+    margin-left: -40px;
+  }
+
+  .todown {
+    width: 96px;
+    height: 96px;
+  }
+
+  .toDwon {
+    margin-bottom: -55px;
+  }
+
+  .navButtonModal,
+  .navButtonForm,
+  .navButton3d,
+  .navButtonInstall {
+    height: 32.39px;
+  }
+
+  .navButton3d,
+  .navButtonInstall {
     display: none;
   }
 
-  .slider_prev{
+  .navButtonModal {
+    width: 95.19px;
+    height: 45.89px;
+    font-size: 24px;
+  }
+
+  .navButtonForm {
+    width: 120px;
+    font-size: 10.8px;
+    padding: 6px;
     display: none;
   }
 
-  #button_wrapper h2{
-    font-size: 20px !important;
+  .navLogo {
+    width: 127.5px;
+    height: 54.16px;
+  }
+
+  .navButtonSelect {
+    font-size: 10.8px;
+    display: none;
+  }
+
+  .navButtonCallIcon,
+  .navButtonNumber {
+    font-size: 22.96px;
+  }
+
+  .navButtonNumber {
+    color: #E8C994;
+  }
+
+  .bgHeader {
+    height: 705.5px;
+    animation: zoom2 35s infinite ease-in-out;
+  }
+
+  .navItems {
+    display: block;
+  }
+
+  .navThridBlock {
+    gap: 0px;
+  }
+
+  .liveorg {
+    display: none;
+  }
+
+  .live {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    background-color: #164247;
+  }
+
+  .live p {
+    font-size: 5.2px;
+  }
+
+  .sliderPriceHeading {
+    font-size: 34px;
+  }
+
+  .uls {
+    font-size: 18.7px;
+  }
+
+  .sliderPriceSmallH {
+    font-size: 23.8px;
+  }
+
+  .italianprice {
+    font-size: 17px;
+  }
+
+  .card {
+    padding: 42.5px;
+    border-radius: 35px;
+  }
+  .videoimg{
+    width: 707px;
+    height: 397.69px;
+  }
+  .vInfHeading{
+    margin-top: 68px;
+    font-size: 42.5px;
+  }
+  .vInftext{
+    font-size: 17px;
+  }
+  .sliderP{
+    padding-top:150px ;
+  }
+  .sliderHeading{
+    font-size: 80px
+  }
+  .slider_next,
+  .slider_prev {
+    width: 43.19px;
+    height: 43.19px;
+  }
+
+  .formInputName,.formInputPhone{
+    width: 200.80px;
+    font-size:12px ;
+  }
+  .formPart{
+    max-width: 950px;
   }
 }
-  
+@media screen and (max-width:786px) {
 
-  
+  .nav,
+  .header,
+  .sliderPrice {
+    padding: 0px 20px;
+    max-width: 990px;
+  }
+  .priceS{
+    padding-top:100px ;
+  }
+  .header .vohaTitle {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .infor {
+    margin-bottom: -30px;
+  }
+
+  .header .class {
+    font-size: 44.8px;
+    margin-bottom: -10px;
+    margin-left: -20px;
+  }
+
+  .navButtonModal {
+    width: 48px;
+    font-size: 19.5px;
+    height: 32px;
+  }
+
+  .navLogo {
+    width: 80px;
+    height: 33.23px;
+  }
+
+  .navButtonCallIcon,
+  .navButtonNumber {
+    font-size: 21.6px;
+  }
+
+  .bgHeader {
+    height: 560px;
+  }
+
+  .live {
+    width: 48px;
+    height: 48px;
+  }
+
+  .live p {
+    font-size: 6.4px;
+  }
+
+  .navmodal {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem, 1rem;
+  }
+
+  .navmodal .lanaguge,
+  .navButton2,
+  .buttons {
+    justify-content: center;
+  }
+
+  .sliderPriceHeading {
+    font-size: 27.2px;
+  }
+
+  .uls {
+    font-size: 16px;
+  }
+
+  .sliderPriceSmallH {
+    font-size: 22.4px;
+  }
+
+  .italianprice {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 24px 16px;
+    border-radius: 35px;
+  }
+  .videoimg{
+    width: 707px;
+    height: 213.75px;
+  }
+  .vInfHeading{
+    margin-top: 68px;
+    font-size: 42.5px;
+  }
+  .vInftext{
+    font-size: 14.4px;
+  }
+  .sliderP{
+    padding-top:140px ;
+  }
+}

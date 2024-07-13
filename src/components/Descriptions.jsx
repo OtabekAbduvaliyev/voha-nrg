@@ -23,7 +23,6 @@ import logo5 from '../assets/Frame (6).png'
 import logo7 from '../assets/Frame (7).png'
 import logo8 from '../assets/Frame (4).png'
 import { MdApartment } from 'react-icons/md';
-import { IoIosArrowRoundForward } from 'react-icons/io';
 import InfandForm from './InfandForm';
 import { Slider } from './Slider/Slider';
 const Descriptions = () => {
